@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>毒舌解忧局</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="hero">
+        <p class="badge">黑色幽默 AI 充电站</p>
+        <h1>毒舌解忧局</h1>
+        <p class="subtitle">把你的烦恼丢进来，AI 帮你用笑话把它“骂”小一点。</p>
+      </header>
+
+      <section class="panel" aria-label="输入烦恼">
+        <label for="troubleInput">今天你在愁什么？</label>
+        <textarea
+          id="troubleInput"
+          maxlength="120"
+          placeholder="比如：月底了，工资像流星一样一闪而过……"
+        ></textarea>
+        <div class="actions">
+          <button id="generateBtn" type="button">生成毒舌文案</button>
+          <span id="counter" aria-live="polite">0 / 120</span>
+        </div>
+      </section>
+
+      <section class="panel result-wrap" aria-label="AI 输出">
+        <h2>AI 毒舌输出</h2>
+        <p id="result" class="result">点一下按钮，让 AI 开始“嘴替”服务。</p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
